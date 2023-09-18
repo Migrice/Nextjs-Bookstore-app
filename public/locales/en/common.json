@@ -1,5 +1,10 @@
 {
-  "email": "Email",
-  "password": "",
-  "username": ""
+    "email": "Email",
+    "forgot_password": "Forgot password?",
+    "password": "Password",
+    "password_confirmation": "Password confirm",
+    "please_choose_a_password": "Please choose a password.",
+    "please_confirm_your_password": "Please confirm your password",
+    "sign_up": "Sign Up",
+    "username": "Username"
 }

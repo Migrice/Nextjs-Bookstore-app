@@ -1,5 +1,10 @@
 {
-  "email": "Adresse mail",
-  "password": "",
-  "username": ""
+    "email": "Adresse mail",
+    "forgot_password": "Mot de passe oublié ?",
+    "password": "Mot de passe",
+    "password_confirmation": "Confirmation mot de passe",
+    "please_choose_a_password": "Veuillez renseigner le mot de passe",
+    "please_confirm_your_password": "Veuillez confirmer le mot de passe",
+    "sign_up": "Créer le compte",
+    "username": "Nom"
 }
