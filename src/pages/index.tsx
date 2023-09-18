@@ -51,13 +51,13 @@ function UserList() {
           </thead>
 
           <tbody>
-            {users.map((usr: User) => (
+            {/* {users.map((usr: User) => (
               <tr>
                 <td> {usr.id}</td>
                 <td> {usr.username}</td>
                 <td> {usr.email}</td>
               </tr>
-            ))}
+            ))} */}
           </tbody>
         </table>
       </div>

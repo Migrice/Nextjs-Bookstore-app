@@ -5,3 +5,8 @@ export class User{
     password?:string;
     confirm_password?:string
 }
+
+export class MyForm{
+    label? :string;
+    
+}
