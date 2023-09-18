@@ -8,7 +8,6 @@ import "react-toastify/ReactToastify.css";
 
 import { Navbar } from "@/components/Navbar";
 import { ButtonSuccess } from "@/components/atoms/button";
-import { error } from "console";
 
 type Inputs = {
   username: string;

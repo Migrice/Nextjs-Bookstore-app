@@ -14,7 +14,7 @@ function UserList() {
   useEffect(() => {
     axios({
       method: "get",
-      url: "http://127.0.0.1:8000/users/",
+      url: "https://web-production-21f9.up.railway.app/",
       responseType: "json",
     }).then(function (response) {
       console.log(response.data);
