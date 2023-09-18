@@ -56,7 +56,6 @@ function UserSignUp() {
     } finally{
       setIsLoading(false)
     }
-    
   
   };
 
