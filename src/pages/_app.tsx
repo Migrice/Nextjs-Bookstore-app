@@ -8,7 +8,8 @@ import type { AppProps } from 'next/app'
 function BookStoreApp({Component, pageProps}: AppProps){
     return (
         // <div className='bg-zinc-400'>
-            <div className='bg-gray-200'>
+            // <div className='bg-gray-200'>
+            <div>
             <Component {...pageProps} />
         </div>
     )

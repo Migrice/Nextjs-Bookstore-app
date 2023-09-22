@@ -5,18 +5,18 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import Image from "next/image";
+import axiosInstance from "@/utils/helpers/axios";
+
 
 function UserList() {
   const [users, setUsers] = useState([]);
   const router = useRouter();
   const { t } = useTranslation();
 
+
   useEffect(() => {
-    axios({
-      method: "get",
-      url: "https://web-production-21f9.up.railway.app/",
-      responseType: "json",
-    }).then(function (response) {
+    axios.get("http://127.0.0.1:8000/users/").then(function (response) {
       console.log(response.data);
       setUsers(response.data);
     });
@@ -28,6 +28,14 @@ function UserList() {
 
   return (
     <>
+
+    {/* <div className="grid h-screen grid-cols-2">
+      <div className="bg-[('/bookstore.jpeg')]"> 
+             </div>
+      <div className="bg-blue-500"></div>
+       </div> */}
+
+    
       <div className="w-full mx-auto text-right px-4 py-4">
         <button
           className="text-black text-green-800  hover:bg-green-950 border border border-neutral-400 mx-2 px-2  font-bold full mr-8"
@@ -60,7 +68,7 @@ function UserList() {
             ))}
           </tbody>
         </table>
-      </div>
+      </div> 
     </>
   );
 }

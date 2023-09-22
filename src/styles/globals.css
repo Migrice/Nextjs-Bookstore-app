@@ -1,8 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* 
 h1{
     clear: #DC143C;
 } */
+.my-custom-bg-class{
+    background-image: url("../public/images/bookstore.jpeg");
+}
+
+h1 {
+    background: black;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    overflow: hidden;
+    font-size: 26px;
+    font-family: georgia;
+}
+
+h1:before,
+h1:after {
+    content: '';
+    width: 3em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1:before {
+    margin-left: -100%;
+    margin-right: 3em
+}
+
+h1:after {
+    margin-right: -100%;
+    margin-left: 3em;
+}
+
+h2 {
+    color: black;
+    padding: 1em 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+h2:before,
+h2:after {
+    content: '';
+    width: 14em;
+    border-bottom: rgba(123, 152, 160, 0.3) solid;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h2:before {
+    margin-left: -100%;
+    margin-right: 3em
+}
+
+h2:after {
+    margin-right: -100%;
+    margin-left: 3em;
+}
